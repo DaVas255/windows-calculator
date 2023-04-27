@@ -1,24 +1,20 @@
-let input1 = document.querySelector('.input-place1');
-let input2 = document.querySelector('.input-place2');
-let button1 = document.querySelector('.plus');
-let button2 = document.querySelector('.minus');
-let button3 = document.querySelector('.multiply');
-let button4 = document.querySelector('.divide');
+let a = '';
+let b = '';
+let sign = '';
+let finish = false;
 
-button1.onclick = function (){
-    alert(+input1.value + +input2.value);
-    input1.value = '';
-    input2.value = '';
+const digit = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'];
+const action = ['+', '-', 'x', '/'];
+
+
+const out = document.getElementById('output');
+
+function clearAll() {
+    let a = '';
+    let b = '';
+    let sign = '';
+    let finish = false;
+    out.textContent = 0;
 }
 
-button2.onclick = function (){
-    alert(input1.value - input2.value);
-}
-
-button3.onclick = function (){
-    alert(input1.value * input2.value);
-}
-
-button4.onclick = function (){
-    alert(input1.value / input2.value);
-}
+document.getElementById('clear').onclick = clearAll();

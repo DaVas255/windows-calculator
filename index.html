@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,19 @@
     <title>Калькулятор</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <div class="wrapper">
 
         <div class="calculator">
-
             <div class="calculator__control-panel">
                 Калькулятор
-
                 <div class="control-panel__buttons">
-                    <button class="button__func"></button>
-                    <button class="button__func"></button>
-                    <button class="button__func"><img src="png/close.png" width="15px" height="15px" alt=""></button>
+                    <button class="button__func"><img src="png/minus.png" width="15px" alt=""></button>
+                    <button class="button__func"><img src="png/maximize.png" width="15px" alt=""></button>
+                    <button class="button__func close"><img src="png/close.png" width="15px" height="15px"
+                            alt=""></button>
                 </div>
-
             </div>
 
             <div class="calculator__head">
@@ -28,11 +28,10 @@
                     <button class="head__button"><img src="png/menyu_q5wpwvho6gh3_32.png" width="13px" alt=""></button>
                     <span class="head__type">Обычный</span>
                 </div>
-                
                 <button class="head__button"><img src="png/istorii_oi7ikxvnx3r1_32.png" width="20px" alt=""></button>
             </div>
-            <input class="calculator__input" type="number" placeholder="0" style="direction: rtl;">
-            
+            <input class="calculator__input" id="output" type="number" placeholder="0" style="direction: rtl;">
+
             <div class="calculator__buttons">
                 <div class="buttons__row">
                     <button class="button__func">MC</button>
@@ -44,21 +43,22 @@
                 </div>
                 <div class="buttons__row">
                     <button class="button__arifm button">%</button>
-                    <button class="button__arifm button">CE</button>
+                    <button class="button__arifm button" id="clear">CE</button>
                     <button class="button__arifm button">C</button>
-                    <button class="button__arifm button">x</button>
+                    <button class="button__arifm button"><img src="png/clear.png" width="15px" alt=""></button>
                 </div>
                 <div class="buttons__row">
                     <button class="button__arifm button">1/x</button>
                     <button class="button__arifm button">x^2</button>
-                    <button class="button__arifm button">x^1/2</button>
-                    <button class="button__arifm button">/</button>
+                    <button class="button__arifm button"><img src="png/square.png" width="15px" alt=""></button>
+                    <button class="button__arifm button"><img src="png/divide.png" width="15px" alt=""></button>
                 </div>
                 <div class="buttons__row">
                     <button class="button__main button">7</button>
                     <button class="button__main button">8</button>
                     <button class="button__main button">9</button>
-                    <button class="button__arifm button">x</button>
+                    <button class="button__arifm button" value="x"><img src="png/multiply.png" width="15px"
+                            alt=""></button>
                 </div>
                 <div class="buttons__row">
                     <button class="button__main button">4</button>
@@ -76,15 +76,13 @@
                     <button class="button__main button">+/-</button>
                     <button class="button__main button">0</button>
                     <button class="button__main button">,</button>
-                    <button class="button__equals button">=</button>
+                    <button class="button__equals button"><img src="png/equal.png" width="15px" alt=""></button>
                 </div>
             </div>
-        
-
         </div>
-
     </div>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>
